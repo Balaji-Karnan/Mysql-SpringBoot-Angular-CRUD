@@ -1,0 +1,21 @@
+<div class="col-md-6">
+  <h2 class="text-center">Fill this form to add the details in DB</h2>
+<form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input style='width: 100%;background-color: aquamarine;color: black;' type="email" [(ngModel)]="user.email" placeholder="Enter Your Email Address" name="email" class="form-control" id="email">
+  </div>
+
+  <div class="form-group">
+    <label for="firstName">First Name:</label>
+    <input style=' width: 100%;background-color: aquamarine;color: black;'[(ngModel)]="user.firstName" placeholder="Your First Name" name="firstName" class="form-control" id="firstName">
+  </div>
+
+  <div class="form-group">
+    <label for="lastName">Last Name:</label>
+    <input style=' width: 100%;background-color: aquamarine;color: black;' [(ngModel)]="user.lastName" placeholder="Your Last name" name="lastName" class="form-control" id="lastName">
+  </div>
+
+  <button style=' width: 100%;background-color: aquamarine;color: black;'class="btn btn-success" (click)="createUser()">Click to Create</button>
+</form>
+</div>
